@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ack Mutuma Church</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+<body>
+    <header>
+        <nav>
+            <h1>✝️Ack Mutuma Church</h1>
+            <ul>
+
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES &<br>PROGRAMS</a></li>
+                <li><a href="#events">EVENTS</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#bookings">BOOKINGS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#admin">ADMIN</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+
+            </ul> 
+        </nav>
+    </header>
+    <div class="content">
+    <main>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
+
+        <div class="btns">
+            <button id="postEventBtn">Post an Event</button>
+            <button id="postBlogBtn">Post a Blog</button>
+        </div>
+        <section>
+        <div class="news" id="post">
+            <h2>Post an Event</h2>
+            <form id="eventForm">
+          <div class="img-holder">
+            <p>Drag&Drop your image here!</p>
+             <input type="file" id="fileInput" accept="image/*" hidden>
+
+          </div>
+        <label for="photo">Event Name</label>
+        <input type="text" id="title" placeholder="Enter name of the event"required>
+        <label for="photo">Event location</label>
+        <input type="text" id="location" placeholder="Enter location of the event" required>
+        <label for="photo">Event Description</label>
+        <input type="text" id="description" placeholder="Enter description of the event"required>
+        <div class="together">
+        <label for="photo">Date</label>
+        <input type="date" id="date" placeholder="Enter date of the event" required>
+        <label for="photo">Time</label>
+        <input type="time" id="time" placeholder="Enter time of the event"required>
+        </div>
+        <button id="submit">Submit</button>
+            </form>
+        </div>
+        </section>
+
+        <section>
+        <div class="blog" id="blog">
+            <h2>Post a Blog</h2>
+            <form id="blogForm">
+               <div class="img-holder">
+            <p>Drag&Drop your image here!</p>
+             <input type="file" id="fileInput" accept="image/*" hidden>
+
+          </div>
+        <label for="photo">Blog Name</label>
+        <input type="text" id="title" placeholder="Enter name of the blog"> 
+        <label for="photo">Blog Description</label>
+        <input type="text" id="description" placeholder="Enter description of the blog">
+        <div class="together">
+        <label for="photo">Date</label>
+        <input type="date" id="date" placeholder="Enter date of the blog">
+        <label for="photo">Time</label>
+        <input type="time" id="time" placeholder="Enter time of the blog">
+        </div>
+        <button id="submit">Submit</button>
+        </form>
+        </div>
+        </section>
+
+
+    </main>
+    </div>
+</body>
+</html>
+
